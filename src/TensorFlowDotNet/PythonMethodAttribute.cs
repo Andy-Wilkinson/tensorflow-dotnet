@@ -1,6 +1,6 @@
 using System;
 
-[System.AttributeUsage(AttributeTargets.Method, Inherited = false, AllowMultiple = false)]
+[System.AttributeUsage(AttributeTargets.Method | AttributeTargets.Constructor, Inherited = false, AllowMultiple = false)]
 sealed class PythonMethodAttribute : Attribute
 {
     public PythonMethodAttribute(string function)
